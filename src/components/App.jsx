@@ -34,9 +34,6 @@ export class App extends Component {
   render() {
     return (
       <Wrapper>
-        {/* <p style={{ ...alertStyles, backgroundColor: getBgColor(variant) }}>
-          {children}
-        </p> */}
         <Section title="Please leave a feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}

@@ -5,11 +5,9 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     <div>
       {options.map((btn, i) => {
         return (
-          <Button key={'btn-' + i} type="button" onClick={onLeaveFeedback}>
-            <HoverText className="hover-text" aria-hidden="true">
-              {ucFirst(btn)}
-            </HoverText>
-            <span className="actual-text">{ucFirst(btn)}</span>
+          <Button key={btn} type="button" onClick={onLeaveFeedback}>
+            <HoverText>{ucFirst(btn)}</HoverText>
+            <span>{ucFirst(btn)}</span>
           </Button>
         );
       })}
