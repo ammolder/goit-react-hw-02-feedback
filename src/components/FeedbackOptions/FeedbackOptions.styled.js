@@ -34,6 +34,6 @@ export const HoverText = styled.span`
   inset: 0;
   border-right: var(--border-right) solid var(--animation-color);
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.2s;
   -webkit-text-stroke: 1px var(--animation-color);
 `;
