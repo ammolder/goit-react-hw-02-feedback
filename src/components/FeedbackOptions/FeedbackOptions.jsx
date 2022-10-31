@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Button, HoverText } from './FeedbackOptions.styled';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
@@ -20,3 +21,7 @@ function ucFirst(str) {
 
   return str[0].toUpperCase() + str.slice(1);
 }
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.array.isRequired,
+};
