@@ -45,8 +45,10 @@ export class App extends Component {
             <Notification message="There is no feedback"></Notification>
           ) : (
             <Statistics
-              recall={this.state}
-              feedback={this.countTotalFeedback()}
+              good={this.state.good}
+              neutral={this.state.neutral}
+              bad={this.state.bad}
+              total={this.countTotalFeedback()}
               positivePercentage={this.countPositiveFeedbackPercentage()}
             />
           )}

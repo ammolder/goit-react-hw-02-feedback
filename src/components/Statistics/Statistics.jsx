@@ -1,8 +1,10 @@
 import { Wrapper, List, Item } from './Statistics.styled';
 
 export const Statistics = ({
-  recall: { good, neutral, bad },
-  feedback,
+  good,
+  neutral,
+  bad,
+  total,
   positivePercentage,
 }) => {
   return (
@@ -11,7 +13,7 @@ export const Statistics = ({
         <Item>Good: {good}</Item>
         <Item>Neutral: {neutral}</Item>
         <Item>Bad: {bad}</Item>
-        <Item>Total: {feedback}</Item>
+        <Item>Total: {total}</Item>
         <Item>Positive feedback: {positivePercentage}%</Item>
       </List>
     </Wrapper>
